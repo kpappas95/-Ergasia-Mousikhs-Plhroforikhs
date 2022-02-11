@@ -1,0 +1,936 @@
+(
+s.record;
+
+TempoClock.tempo = 65/60;
+
+{
+ Pbind(
+ \note, Pseq([-1], 1),
+ \dur, 1/8;
+ ).play;
+	0.125.wait;
+
+ Pbind(
+ \note, Pseq([3, -1, 6, -1, 3, -1, 6, -1], 4),
+ \dur,  1/8,
+		\amp, 0.65,
+		\legato, 0.1,
+ ).play;
+
+	//HATS
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 4)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 8)
+).play;
+
+
+
+	4.wait;
+ Pbind(
+ \note, Pseq([4, -1, 7, -1, 4, -1, 7, -1], 4),
+ \dur,  1/8,
+		\amp, 0.65,
+		\legato, 0.1,
+ ).play;
+
+	//HATS
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 4)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 8)
+).play;
+
+   4.wait;
+ Pbind(
+ \note, Pseq([3, -1, 6, -1, 3, -1, 6, -1], 4),
+ \dur,  1/8,
+		\amp, 0.65,
+		\legato, 0.1,
+ ).play;
+
+	//HATS
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 4)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 8)
+).play;
+
+	4.wait;
+ Pbind(
+ \note, Pseq([4, -1, 7, -1, 4, -1, 7, -1], 4),
+ \dur,  1/8,
+		\amp, 0.65,
+		\legato, 0.1,
+ ).play;
+
+	//HATS
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 4)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 8)
+).play;
+
+	4.wait;
+ Pbind(
+ \note, Pseq([11, -1, 9, -1, 8, -1, 9, -1, 8, -1, 6, -1, 8, -1, 4, -1, 6, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1], 4),
+ \dur,  1/8,
+		\amp, 0.66,
+		\legato, 0.1,
+ ).play;
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 16)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 32)
+).play;
+	16.wait;
+ Pbind(
+ \note, Pseq([3, -1, 6, -1, 3, -1, 6, -1], 4),
+ \dur,  1/8,
+		\amp, 0.65,
+		\legato, 0.1,
+ ).play;
+
+	//HATS
+{
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, ], 1)
+).play;
+
+
+	}.fork;
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, ], 1)
+).play;
+
+	//CHORD
+ Pbind(
+ \note, Pseq([[-13, -6, -1], Rest(0.2), [-13, -6, -1], Rest(0.2)], 1),
+ \dur,  2/8,
+		\amp, 0.7,
+	).play;
+
+
+
+
+
+    //TOMS
+
+	~tomsBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/toms flam 2.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~tomsBuffer,
+	\amp, Pseq([0.75, 0, 0.75, 0,], 1)
+).play;
+
+    //KICK
+
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, ], 1)
+).play;
+
+	4.wait;
+
+
+ Pbind(
+ \note, Pseq([4, -1, 7, -1, 4, -1, 7, -1], 4),
+ \dur,  1/8,
+		\amp, 0.65,
+		\legato, 0.1,
+ ).play;
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0, ], 4)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1, ], 8)
+).play;
+
+    //KICK
+
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0, 0, 1, 0,], 4)
+).play;
+
+   4.wait;
+ Pbind(
+ \note, Pseq([3, -1, 6, -1, 3, -1, 6, -1], 4),
+ \dur,  1/8,
+		\amp, 0.65,
+		\legato, 0.1,
+ ).play;
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 4)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 8)
+).play;
+
+    //KICK
+
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0, 0, 1, 0,], 4)
+).play;
+	4.wait;
+ Pbind(
+ \note, Pseq([4, -1, 7, -1, 4, -1, 7, -1], 4),
+ \dur,  1/8,
+		\amp, 0.65,
+		\legato, 0.1,
+ ).play;
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 4)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 8)
+).play;
+
+    //KICK
+
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0, 0, 1, 0,], 4)
+).play;
+	4.wait;
+
+	 Pbind(
+ \note, Pseq([11, -1, 9, -1, 8, -1, 9, -1, 8, -1, 6, -1, 8, -1, 4, -1, 6, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1], 4),
+ \dur,  1/8,
+		\amp, 0.66,
+		\legato, 0.1,
+ ).play;
+
+	//HATS
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, ], 2)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, ], 2)
+).play;
+
+	//CHORD
+ Pbind(
+ \note,[-13, -6, -1],
+		\dur,  Pseq([2/8, Rest(2/8), 2/8, Rest(2/8), Rest(3)], 4),
+		\amp, 0.7,
+	).play;
+
+
+
+
+
+    //TOMS
+
+	~tomsBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/toms flam 2.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~tomsBuffer,
+	\amp, Pseq([0.75, 0, 0.75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ], 4)
+).play;
+
+    //KICK
+{
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, ], 3)
+).play;
+	12.wait;
+    //KICK
+
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/8, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.5, 1, 0, 0, 0, 0, ], 1)
+).play;
+
+	    //SNARE
+
+	~snareBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/snare sample 2.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/8, // 16th note is one quarter of a beat!
+  \bufnum, ~snareBuffer,
+	\amp, Pseq([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.2, 0, 1, 1.2, 0, 0, 1.2, 1.2, 1.2, 1.2, ], 1),
+
+).play;
+	}.fork;
+
+
+	//4.wait;
+
+	16.wait;
+
+	//verse loool
+
+ Pbind(
+ \note, Pseq([11, -1, 9, -1, 8, -1, 9, -1, 8, -1, 6, -1, 8, -1, 4, -1, 6, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1], 4),
+ \dur,  1/8,
+		\amp, 0.58,
+		\legato, 0.02,
+ ).play;
+
+	~crashBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/crash l sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~crashBuffer,
+		\amp, Pseq([1], 1);
+).play;
+
+	//HATS
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 16)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 32)
+).play;
+
+
+   //KICK
+
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0.7, 0, 0, 0,], 16)
+).play;
+
+
+   //SNARE
+
+
+	~snareBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/snare sample 2.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp,
+
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~snareBuffer,
+	\amp, Pseq([0, 0, 1.2, 0,], 16)
+).play;
+	16.wait;
+
+	//verse loool
+
+ Pbind(
+ \note, Pseq([11, -1, 9, -1, 8, -1, 9, -1, 8, -1, 6, -1, 8, -1, 4, -1, 6, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1], 4),
+ \dur,  1/8,
+		\amp, 0.58,
+		\legato, 0.02,
+ ).play;
+
+	~crashBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/crash r sample2.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~crashBuffer,
+		\amp, Pseq([1], 1);
+).play;
+
+	//HATS
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 16)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 32)
+).play;
+
+
+   //KICK
+
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0.7, 0, 0, 0,], 16)
+).play;
+
+
+   //SNARE
+
+
+	~snareBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/snare sample 2.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp,
+
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~snareBuffer,
+	\amp, Pseq([0, 0, 1.2, 0,], 16)
+).play;
+	16.wait;
+
+	//verse loool
+
+ Pbind(
+ \note, Pseq([11, -1, 9, -1, 8, -1, 9, -1, 8, -1, 6, -1, 8, -1, 4, -1, 6, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1], 4),
+ \dur,  1/8,
+		\amp, 0.58,
+		\legato, 0.02,
+ ).play;
+
+	~crashBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/crash l sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~crashBuffer,
+		\amp, Pseq([1], 1);
+).play;
+
+	//HATS
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 16)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 32)
+).play;
+
+
+   //KICK
+
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0.7, 0, 0, 0,], 16)
+).play;
+
+
+   //SNARE
+
+
+	~snareBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/snare sample 2.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp,
+
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~snareBuffer,
+	\amp, Pseq([0, 0, 1.2, 0,], 16)
+).play;
+	16.wait;
+
+	//verse loool
+
+ Pbind(
+ \note, Pseq([11, -1, 9, -1, 8, -1, 9, -1, 8, -1, 6, -1, 8, -1, 4, -1, 6, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1, 4, -1, 3, -1], 4),
+ \dur,  1/8,
+		\amp, 0.58,
+		\legato, 0.02,
+ ).play;
+
+	~crashBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/crash r sample2.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~crashBuffer,
+		\amp, Pseq([1], 1);
+).play;
+
+	//HATS
+
+	~hhcBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat closed.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhcBuffer,
+	\amp, Pseq([1, 0, 1, 0,], 16)
+).play;
+
+
+	~hhpBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/hi hat pedal.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~hhpBuffer,
+	\amp, Pseq([0, 1,], 32)
+).play;
+
+
+   //KICK
+
+	~kickBuffer = Buffer.read(s, "E:/Post Kostas/Samples/Metal Kick Sample.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp;
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~kickBuffer,
+	\amp, Pseq([0.7, 0, 0, 0,], 16)
+).play;
+
+
+   //SNARE
+
+
+	~snareBuffer = Buffer.read(s, "C:/Users/kpapp/OneDrive/Έγγραφα/REAPER Media/snare sample 2.wav");
+
+SynthDef("samplePlayer",{ arg out = 0, bufnum, amp;
+ Out.ar( out,
+ PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), doneAction: 2) * amp,
+
+)
+}).add;
+	Pbind(
+  \instrument, \samplePlayer,
+  \dur, 1/4, // 16th note is one quarter of a beat!
+  \bufnum, ~snareBuffer,
+	\amp, Pseq([0, 0, 1.2, 0,], 16)
+).play;
+	16.wait;
+
+}.fork;
+)
